@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+
+<table id="tabla_descarga_1">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>John Doe</td>
+        <td>john@gmail.com</td>
+        <td>USA</td>
+    </tr>
+    <tr>
+        <td>Michael Addison</td>
+        <td>michael@gmail.com</td>
+        <td>UK</td>
+    </tr>
+    <tr>
+        <td>Sam Farmer</td>
+        <td>sam@gmail.com</td>
+        <td>France</td>
+    </tr>
+</table>
+
+<button onclick="generarExcel()">Generar Tabla de Excel</button>
+
+<script>
+
+function GenerarExcel(){
+
+    $('tabla_descarga_1').table2excel({ name: "Prueba", filename: "NombreDelArchivo"});
+
+}
+
+</script>
+
+</html>
